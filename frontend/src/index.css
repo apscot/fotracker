@@ -1,0 +1,34 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #f0f2f5;
+  color: #1a1a2e;
+}
+
+#root { min-height: 100vh; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f0f2f5; }
+::-webkit-scrollbar-thumb { background: #d9d9d9; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #bfbfbf; }
+
+/* Ant Design overrides for enterprise light theme */
+.ant-layout { background: #f0f2f5; }
+.ant-layout-sider { box-shadow: 2px 0 8px rgba(0,0,0,0.08); }
+.ant-card { border-radius: 8px; }
+.ant-table-thead > tr > th { background: #fafafa; font-weight: 600; }
+
+/* Upload area */
+.upload-dragger .ant-upload-drag { border-radius: 8px; }
+
+/* Target cards */
+.target-card-achieved { border-left: 4px solid #52c41a !important; }
+.target-card-pending  { border-left: 4px solid #ff4d4f !important; }
+
+.stat-card-blue   { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; }
+.stat-card-green  { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); color: #fff; }
+.stat-card-orange { background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%); color: #fff; }
+.stat-card-red    { background: linear-gradient(135deg, #f953c6 0%, #b91d73 100%); color: #fff; }
